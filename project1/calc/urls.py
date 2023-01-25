@@ -8,15 +8,15 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 
-class UserViewSet(viewsets.ModelViewSet):
-    queryset = User.objects.all()
-    print('amaing')
-    print(queryset)
-    serializer_class = UserSerializer
+# class UserViewSet(viewsets.ModelViewSet):
+#     queryset = User.objects.all()
+#     print('amaing')
+#     print(queryset)
+#     serializer_class = UserSerializer()
 
 
 router = routers.DefaultRouter()
-router.register(r'users', UserViewSet)
+# router.register(r'users', UserViewSet)
 
 urlpatterns = [
     path('',views.home,name='home'),

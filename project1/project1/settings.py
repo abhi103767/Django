@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'snippet.apps.SnippetConfig',
     'calc.apps.CalcConfig',
     'django.contrib.admin',
     'django.contrib.auth',
